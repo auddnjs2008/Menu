@@ -19,6 +19,7 @@ const handleClick = () => {
     bar.classList.add("slideIn");
     bar.classList.remove("slider");
     button.innerText = "Menu Start";
+    addHidden("lalala");
   }
 };
 
@@ -51,6 +52,7 @@ const numberClick = (event) => {
     bar.classList.add("slideIn");
     bar.classList.remove("slider");
     button.innerText = "Menu Start";
+    addHidden("lalala");
   }
 };
 
