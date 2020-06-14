@@ -28,13 +28,14 @@ body {
   margin-bottom: 20px;
   padding-bottom: 10px;
   padding-top: 10px;
+  cursor: pointer;
 }
 
 .main {
   position: absolute;
   top: 30%;
   left: 50%;
-  width: 500px;
+  width: 50%;
   height: 300px;
   background-color: black;
   border-radius: 20px;
@@ -72,4 +73,25 @@ button:active {
 .slider {
   transform: translateX(0px);
   transition: transform 0.25s linear;
+}
+
+.slideIn {
+  transform: translateX(-100px);
+  transition: transform 0.25s linear;
+}
+
+@keyframes back {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.mainSlider {
+  animation: back 2s linear;
 }
